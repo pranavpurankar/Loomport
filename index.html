@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Logistics Trip Validator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Logistics Trip Validator</h1>
+        
+        <!-- Form to add trips -->
+        <div class="form">
+            <h3>Add Trip Manually</h3>
+            <label>Pickup:</label>
+            <input type="text" id="pickup" placeholder="Enter pickup point">
+            <label>Dropoff:</label>
+            <input type="text" id="dropoff" placeholder="Enter dropoff point">
+            <label>Warehouse (optional):</label>
+            <input type="text" id="warehouse" placeholder="Enter warehouse (optional)">
+            <button id="addTrip">Add Trip</button>
+        </div>
+
+        <!-- File upload section -->
+        <div class="upload">
+            <h3>Upload Trips via CSV</h3>
+            <input type="file" id="csvFile" accept=".csv">
+            <button id="uploadCSV">Upload CSV</button>
+        </div>
+
+        <!-- Validation result display -->
+        <div id="result"></div>
+
+        <!-- Button to validate trips -->
+        <button id="validateTrips">Validate Trips</button>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+</body>
+</html>
