@@ -2,6 +2,8 @@
 
 This project is a **Shipment Trip Validation System** that allows users to input and validate trips related to shipments with multiple pickup, dropoff, and warehouse locations.
 
+## URL: [https://loomport.co/]
+
 ## **Features**
 - Users can add trips with pickup, dropoff, and optional warehouse locations.
 - Data is persisted in the browser using **localStorage**.
@@ -16,13 +18,6 @@ This project is a **Shipment Trip Validation System** that allows users to input
 - **js/trip.js**: Contains the logic for handling trips and shipment data.
 - **js/validator.js**: Validates the trips through API calls.
 
-## **How to Run**
-1. Open `index.html` in a browser.
-2. Add trips by entering pickup, dropoff, and warehouse locations.
-3. Click **Add Trip** to save each trip to localStorage.
-4. Click **Validate Trips** to check the validity of the trips.
-5. Navigate to the **About Us** page for additional information.
-
 ## **Technologies Used**
 - **HTML5** and **CSS3** for structure and design.
 - **JavaScript (ES6)** modules for functionality.
@@ -31,11 +26,6 @@ This project is a **Shipment Trip Validation System** that allows users to input
 
 ## **API**
 The app uses **Mockaroo** to validate trip data. Mockaroo generates a mock API with random data for testing purposes.
-
-## **UI Design**
-- The app has a **dark theme** with a clean, minimalist design.
-- A **logo** is displayed at the top of the page.
-- Navigation between pages is simple and intuitive.
 
 ## **License**
 This project is open-source and free to use.
