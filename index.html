@@ -3,39 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Logistics Trip Validator</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Shipment Validation</title>
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Smart Logistics Trip Validator</h1>
+    <header>
+        <img 
+        src="https://www.roado.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FRoadoLogoSvg.6e8783af.svg&w=256&q=75"
+        alt="Company Logo" class="logo">
+        <h1>Shipment Trip Validation System</h1>
+    </header>
+
+    <nav>
+        <a href="details.html">About Us</a>
+    </nav>
+
+    <section class="container">
+        <form id="tripForm">
+            <label for="pickupLocation">Pickup Location:</label>
+            <input type="text" id="pickupLocation" placeholder="Enter pickup city" required>
+            
+            <label for="dropoffLocation">Dropoff Location:</label>
+            <input type="text" id="dropoffLocation" placeholder="Enter dropoff city" required>
+            
+            <label for="warehouseLocation">Warehouse Location (optional):</label>
+            <input type="text" id="warehouseLocation" placeholder="Enter warehouse city">
+            
+            <button type="button" id="addTrip">Add Trip</button>
+            <button type="submit" id="validateTrips">Validate Trips</button>
+        </form>
         
-        <!-- Form to add trips -->
-        <div class="form">
-            <h3>Add Trip Manually</h3>
-            <label>Pickup:</label>
-            <input type="text" id="pickup" placeholder="Enter pickup point">
-            <label>Dropoff:</label>
-            <input type="text" id="dropoff" placeholder="Enter dropoff point">
-            <label>Warehouse (optional):</label>
-            <input type="text" id="warehouse" placeholder="Enter warehouse (optional)">
-            <button id="addTrip">Add Trip</button>
-        </div>
+        <div id="tripList"></div>
+        <div id="resultDiv" style="display: none;"></div>
+    </section>
 
-        <!-- File upload section -->
-        <div class="upload">
-            <h3>Upload Trips via CSV</h3>
-            <input type="file" id="csvFile" accept=".csv">
-            <button id="uploadCSV">Upload CSV</button>
-        </div>
+    <footer>
+        <p>&copy; 2024 Shipment Validator</p>
+    </footer>
 
-        <!-- Validation result display -->
-        <div id="result"></div>
-
-        <!-- Button to validate trips -->
-        <button id="validateTrips">Validate Trips</button>
-    </div>
-
-    <script type="module" src="/app.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
 </body>
 </html>
