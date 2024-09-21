@@ -4,43 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipment Validation</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img 
-        src="https://www.roado.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FRoadoLogoSvg.6e8783af.svg&w=256&q=75"
-        alt="Company Logo" class="logo">
-        <h1>Shipment Trip Validation System</h1>
-    </header>
 
-    <nav>
-        <a href="details.html">About Us</a>
-    </nav>
-
-    <section class="container">
+    <div class="container">
+        <h1>Shipment Trip Validator</h1>
         <form id="tripForm">
-            <label for="pickupLocation">Pickup Location:</label>
-            <input type="text" id="pickupLocation" placeholder="Enter pickup city" required>
-            
-            <label for="dropoffLocation">Dropoff Location:</label>
-            <input type="text" id="dropoffLocation" placeholder="Enter dropoff city" required>
-            
-            <label for="warehouseLocation">Warehouse Location (optional):</label>
-            <input type="text" id="warehouseLocation" placeholder="Enter warehouse city">
-            
-            <button type="button" id="addTrip">Add Trip</button>
-            <button type="submit" id="validateTrips">Validate Trips</button>
+            <label for="tripId">Enter Trip ID:</label>
+            <input type="text" id="tripId" placeholder="Enter Trip ID" required>
+            <button type="button" onclick="validateTrip()">Validate Trip</button>
         </form>
-        
-        <div id="tripList"></div>
-        <div id="resultDiv" style="display: none;"></div>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 Shipment Validator</p>
-    </footer>
+        <div id="result" class="result-box">
+            <!-- Trip result displayed here -->
+        </div>
+    </div>
 
-    <script type="module" src="./src/js/main.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
