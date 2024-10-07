@@ -1,27 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipment Validation</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farewell to Loomport</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9; /* Offwhite */
+      color: #1a1a1a; /* Black */
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+      border: 1px solid #1a1a1a;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #b30000; /* Dark Red */
+      font-weight: bold;
+    }
+
+    .signature {
+      margin-top: 40px;
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    .signature span {
+      font-weight: bold;
+      color: #b30000; /* Dark Red */
+    }
+  </style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>Shipment Trip Validator</h1>
-        <form id="tripForm">
-            <label for="tripId">Enter Trip ID:</label>
-            <input type="text" id="tripId" placeholder="Enter Trip ID" required>
-            <button type="button" onclick="validateTrip()">Validate Trip</button>
-        </form>
-
-        <div id="result" class="result-box">
-            <!-- Trip result displayed here -->
-        </div>
+  <div class="container">
+    <h1>Thank You for Your Support</h1>
+    <p>I'm <span class="highlight">shutting down</span> this idea to make way for something even greater.</p>
+    <p>Exciting times lie ahead as I focus on <span class="highlight">Gumloop</span>, a platform that will transform how you automate tasks and workflows.</p>
+    <p>Stay tuned for the future of seamless automation!</p>
+    <div class="signature">
+      — Pranav Purankar, <span>Visionary Software Engineer</span>
     </div>
-
-    <script src="script.js"></script>
-
+  </div>
 </body>
 </html>
